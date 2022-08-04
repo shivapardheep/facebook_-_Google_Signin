@@ -74,11 +74,11 @@ class _AuthScreenState extends State<AuthScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   _fbLoginFun();
                 },
-                color: Colors.blue,
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                 child: const Text(
                   "Facebook login",
                   style: TextStyle(color: Colors.white),
@@ -96,11 +96,12 @@ class _AuthScreenState extends State<AuthScreen> {
               //       Icons.send,
               //       size: 40,
               //     )),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   _google_login();
                 },
-                color: Colors.green,
+                // color: Colors.green,
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                 child: const Text(
                   "Google Signin",
                   style: TextStyle(color: Colors.white),
